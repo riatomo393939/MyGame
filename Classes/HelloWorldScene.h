@@ -27,13 +27,39 @@
 
 #include "cocos2d.h"
 
-class HelloWorld : public cocos2d::Scene
+class HelloWorld : public cocos2d::Scene//C#‚Å‚¢‚¤ƒNƒ‰ƒX‚İ‚½‚¢‚È‚à‚Ì
 {
 public:
     static cocos2d::Scene* createScene();
 
     virtual bool init();
-    
+	void update(float delta)override;
+
+	//////ƒXƒvƒ‰ƒCƒg
+	cocos2d::Sprite*sprite;
+
+#if(‚â‚Á‚Ä‚İ‚æ‚¤)
+	//cocos2d::Sprite*sprite2;
+
+	//cocos2d::Sprite*sprite[10];//c++‚Å‚Í‚±‚±‚Å—v‘f”‚ğ“ü‚ê‚é
+
+	////—ûK–â‘è‚Q
+	//int counter;
+
+	////—ûK–â‘è‚R
+	//int state;
+
+	////‚â‚Á‚Ä‚İ‚æ‚¤‚P
+	//float rot;
+
+	////‚â‚Á‚Ä‚İ‚æ‚¤‚Q
+	//float blue;
+
+	////‚â‚Á‚Ä‚İ‚æ‚¤‚R
+	//float opacity;
+
+#endif
+
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
     
