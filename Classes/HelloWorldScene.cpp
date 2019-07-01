@@ -465,3 +465,5 @@ void HelloWorld::update(float delta)
 }
 
 #endif
+
+//‘‚«Š·‚¦ƒeƒXƒg
